@@ -194,6 +194,8 @@ NOTICES_DECORATOR_DISPLAY_INTERVAL: Final = 86400  # in seconds
 
 DRY_RUN_PREFIX: Final = "Dry run action:"
 PREFIX_NAME_DISALLOWED_CHARS: Final = {"/", " ", ":", "#"}
+OK_MARK: Final = "\u2705"
+X_MARK: Final = "\u274c"
 
 
 class SafetyChecks(Enum):

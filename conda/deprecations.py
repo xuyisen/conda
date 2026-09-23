@@ -63,6 +63,9 @@ class DeprecationHandler:
 
         :param version: Version string to compare against.
         """
+        if version is None:
+            return False
+
         if self._version_tuple and (version_tuple := self._get_version_tuple(version)):
             return self._version_tuple < version_tuple
 
